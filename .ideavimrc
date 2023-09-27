@@ -1,0 +1,100 @@
+" ================================================================================================
+" 🌍🌍🌍 插件 🌍🌍🌍
+" ================================================================================================
+" easymotion
+set easymotion
+map <Leader>s <Plug>(easymotion-linebackward)
+
+" ================================================================================================
+" 🐧🐧🐧 Basic settings 🐧🐧🐧
+" ================================================================================================
+let mapleader=" "
+
+"--将 jj 映射为 <Esc>
+imap jj <Esc>
+
+"设置在光标距离窗口顶部或底部一定行数时，开始滚动屏幕内容的行为
+set scrolloff=7
+
+"--递增搜索功能：在执行搜索（使用 / 或 ? 命令）时，
+"Vim 会在您输入搜索模式的过程中逐步匹配并高亮显示匹配的文本。
+set incsearch
+"--在搜索时忽略大小写
+set ignorecase
+" 智能搜索
+set ignorecase
+set smartcase
+
+" 显示当前的模式
+set showmode
+
+" 共享系统粘贴板
+set clipboard^=unnamed,unnamedplus
+set history=10000
+
+" 复制黏贴
+xmap <C-c> y
+map <C-S-V> p
+imap <C-S-V> <C-r>+
+
+"提示音静音
+set noerrorbells
+set visualbell
+
+"跳到start or end
+nmap H ^
+nmap L $
+
+"跳转到下一个错误或警告
+nmap ge <action>(GotoNextError)
+"在源代码和测试代码之间快速切换
+nmap gt <action>(GotoTest)
+"跳转到当前接口或抽象类的实现处
+nmap gi <action>(GotoImplementation)
+"将光标移动到上下一个方法的声明处
+nmap gu <action>(MethodUp)
+nmap gn <action>(MethodDown)
+"查看方法介绍
+nmap gm <action>(QuickJavaDoc)
+"查看错误信息
+nmap gh <action>(ShowErrorDescription)
+"跳转到上次修改的地方
+nmap gb <action>(JumpToLastChange)
+"搜索错文件
+nmap gf <action>(GotoFile)
+"查看最近打开的文件
+nmap gv <action>(RecentFiles)
+" 注释
+nmap gcc <Action>(CommentByLineComment)
+xmap gc <Action>(CommentByLineComment)<Esc>
+"切换 Tab
+map <A-q> <action>(PreviousTab)
+map <A-e> <action>(NextTab)
+" 重命名
+nmap <C-n> <Action>(RenameElement)
+imap <C-n> <Action>(RenameElement)
+
+"改Cw命令成为A-w -!important
+map <A-w> <C-w>
+
+"改用空格 +dc 方式，向上向下跳转
+map <Leader>d <C-d>
+map <Leader>u <C-u>
+
+" ================================================================================================
+"  🐧🐧🐧 vim按键 🐧🐧🐧
+" ================================================================================================
+sethandler <C-2> a:vim
+sethandler <C-A> a:ide
+sethandler <C-B> a:vim
+sethandler <C-C> a:ide
+sethandler <C-D> a:vim
+sethandler <C-F> a:ide
+sethandler <C-H> a:vim
+sethandler <C-I> a:vim
+sethandler <C-L> a:vim
+sethandler <C-N> a:vim
+sethandler <C-S> a:vim
+sethandler <C-U> a:vim
+sethandler <C-V> a:ide
+sethandler <C-W> a:ide
