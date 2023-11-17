@@ -3,7 +3,7 @@
 " ================================================================================================
 " easymotion
 Plug 'easymotion/vim-easymotion'
-let mapleader=" "
+let mapleader="s"
 set easymotion
 map <Leader> <Plug>(easymotion-prefix)
 
@@ -81,10 +81,6 @@ imap <C-n> <Action>(RenameElement)
 
 "改Cw命令成为A-w -!important
 map <A-w> <C-w>
-
-"改用空格 +dc 方式，向上向下跳转
-map <Leader>d <C-d>
-map <Leader>u <C-u>
 
 " ================================================================================================
 "  🐧🐧🐧 vim按键 🐧🐧🐧
