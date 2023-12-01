@@ -62,7 +62,8 @@ nmap gh <action>(ShowErrorDescription)
 "跳转到上次修改的地方
 nmap gb <action>(JumpToLastChange)
 "搜索错文件
-nmap gf <action>(GotoFile)
+nmap gf <action>(FindInPath)
+vmap gf <action>(FindInPath)
 "查看最近打开的文件
 nmap gv <action>(RecentFiles)
 " 注释
