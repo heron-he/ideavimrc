@@ -3,9 +3,11 @@
 " ================================================================================================
 " easymotion
 Plug 'easymotion/vim-easymotion'
-let mapleader="s"
+let mapleader=" "
 set easymotion
 map <Leader> <Plug>(easymotion-prefix)
+
+set sneak
 
 " ================================================================================================
 " 🐧🐧🐧 Basic settings 🐧🐧🐧
@@ -78,6 +80,7 @@ imap <A-q> <action>(PreviousTab)
 imap <A-e> <action>(NextTab)
 vmap <A-q> <action>(PreviousTab)
 vmap <A-e> <action>(NextTab)
+
 " 重命名
 nmap <C-n> <Action>(RenameElement)
 imap <C-n> <Action>(RenameElement)
