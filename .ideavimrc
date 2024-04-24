@@ -68,6 +68,8 @@ nmap gf <action>(FindInPath)
 vmap gf <action>(FindInPath)
 "查看最近打开的文件
 nmap gv <action>(RecentFiles)
+"debug项目
+nmap gr <action>(Debug)
 " 注释
 nmap gcc <Action>(CommentByLineComment)
 xmap gc <Action>(CommentByLineComment)<Esc>
