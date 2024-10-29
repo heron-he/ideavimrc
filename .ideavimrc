@@ -80,10 +80,11 @@ imap <A-q> <action>(PreviousTab)
 imap <A-e> <action>(NextTab)
 vmap <A-q> <action>(PreviousTab)
 vmap <A-e> <action>(NextTab)
-
 " 重命名
 nmap <C-n> <Action>(RenameElement)
 imap <C-n> <Action>(RenameElement)
+" 代码补全
+imap <A-i> <Action>(CodeCompletion)
 
 "改Cw命令成为A-w -!important
 map <A-w> <C-w>
@@ -95,8 +96,8 @@ nnoremap <A-d>  <C-d>
 " 向上半屏幕
 nnoremap <A-u>  <C-u>
 " 来回跳转
-map <A-i>  <C-i>
-map <A-o>  <C-o>
+nnoremap <A-i>  <C-i>
+nnoremap <A-o>  <C-o>
 " 恢复撤销的操作
 nnoremap <A-r> <C-r>
 
